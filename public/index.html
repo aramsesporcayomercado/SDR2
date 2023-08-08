@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Archivos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sistema de Archivos</h1>
+  
+  <!-- Botón para abrir el modal -->
+  <button id="openModalBtn">Abrir Modal</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Completa el formulario</h2>
+      <form id="form">
+        <label for="name">Cliente</label>
+        <input type="text" id="name" name="name" required>
+        <label for="Dispositivos">Dispositivos</label>
+        <input type="text" id="Dispositivos" name="Dispositivos" required>
+        <label for="Periodo">Periodo</label>
+        <input type="text" id="Periodo" name="Periodo" required>
+        <label for="F.entrada">F.entrada</label>
+        <input type="text" id="F.entrada" name="F.entrada" required>
+        <label for="O.entrada">O.entrada</label>
+        <input type="text" id="O.entrada" name="O.entrada" required>
+        <label for="Dterm">(D)term</label>
+        <input type="text" id="(D)term" name="(D)term" required>
+        <label for="DQuim">(D)Quim</label>
+        <input type="text" id="DQuim" name="DQuim" required>
+        <label for="Estatus">Estatus(F)</label>
+        <input type="text" id="Estatus" name="Estatus" required>
+        <label for="PrecioT">PrecioT</label>
+        <input type="PrecioT" id="PrecioT" name="PrecioT" required>
+        <input type="text" id="PrecioT" name="PrecioT" required>
+        <label for="PrecioT.T">PrecioT.T</label>
+        <input type="text" id="PrecioT.T" name="PrecioT.T" required>
+        <label for="PrecioT.Q">PrecioT.Q</label>
+        <input type="text" id="PrecioT.Q" name="PrecioT.Q" required>
+        <label for="Total MNX">Total MNX</label>
+        <input type="text" id="Total MNX" name="Total MNX" required>
+        <label for="Total+IVA MN">Total+IVA MN</label>
+        <input type="text" id="Total+IVA MN" name="Total+IVA MN" required>
+        <label for="PrecioT">PrecioT</label>
+        <input type="text" id="PrecioT" name="PrecioT" required>
+        <button type="submit">Guardar y Descargar</button>
+      </form>
+    </div>
+  </div>
+
+  <input type="file" id="excelFile" accept=".xlsx">
+  <button class="download-button" id="downloadFormExcel">Descargar Formulario en Excel</button>
+  <button class="download-button" id="downloadFormPDF">Descargar Formulario en PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
